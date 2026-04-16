@@ -17,16 +17,22 @@ const Navbar = () => {
         height={100}
       />
       <div className="hidden md:flex gap-8 text-sm">
-        <Link href="#" className="text-[#07522e] hover:font-bold transition">
+        <Link
+          href="about-us"
+          className="text-[#07522e] hover:font-bold transition"
+        >
           About
         </Link>
-        <Link href="#" className="text-[#07522e] hover:font-bold transition">
+        <Link
+          href="programs"
+          className="text-[#07522e] hover:font-bold transition"
+        >
           Programs
         </Link>
-        <Link href="#" className="text-[#07522e] hover:font-bold transition">
+        <Link href="team" className="text-[#07522e] hover:font-bold transition">
           Team
         </Link>
-        <Link href="#" className="text-[#07522e] hover:font-bold transition">
+        <Link href="faqs" className="text-[#07522e] hover:font-bold transition">
           FAQs
         </Link>
       </div>
@@ -50,17 +56,29 @@ const Navbar = () => {
       )}
 
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
-          <Link href="#" className="text-[#07522e] hover:font-bold transition">
+        <div className="animation-fadeIn absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
+          <Link
+            href="about-us"
+            className="text-[#07522e] hover:font-bold transition"
+          >
             About
           </Link>
-          <Link href="#" className="text-[#07522e] hover:font-bold transition">
+          <Link
+            href="programs"
+            className="text-[#07522e] hover:font-bold transition"
+          >
             Programs
           </Link>
-          <Link href="#" className="text-[#07522e] hover:font-bold transition">
+          <Link
+            href="team"
+            className="text-[#07522e] hover:font-bold transition"
+          >
             Team
           </Link>
-          <Link href="#" className="text-[#07522e] hover:font-bold transition">
+          <Link
+            href="faqs"
+            className="text-[#07522e] hover:font-bold transition"
+          >
             FAQs
           </Link>
           <Link

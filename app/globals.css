@@ -8,8 +8,16 @@ body {
   z-index: 1;
   position: relative;
 }
-.hero::before {
+
+.landing-hero::before {
   background-image: url("/images/hero-bg.jpg");
+}
+
+.about-hero::before {
+  background-image: url("/images/about/lasu-front.png");
+}
+
+.hero::before {
   background-position: center;
   background-size: cover;
   content: "";

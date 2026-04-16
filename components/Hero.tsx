@@ -1,14 +1,9 @@
 import Link from "next/link";
 
-// const bgStyle = {
-//   backgroundImage: "url('/images/hero-bg.png')",
-
-// };
-
 export default function Hero() {
   return (
     <section className="w-full flex flex-col items-center gap-12 ">
-      <div className="flex flex-col items-start justify-between lg:items-center lg:justify-center w-full hero h-fit p-15 lg:p-20">
+      <div className="hero landing-hero flex flex-col items-start justify-between lg:items-center lg:justify-center w-full h-full px-15 py-20 lg:p-20">
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-black">
           NDPC LASU Chapter
         </h1>
