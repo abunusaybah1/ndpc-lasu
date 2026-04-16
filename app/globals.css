@@ -9,12 +9,12 @@ body {
   position: relative;
 }
 .hero::before {
-  background-image: url("/images/hero-bg.png");
+  background-image: url("/images/hero-bg.jpg");
   background-position: center;
   background-size: cover;
   content: "";
   position: absolute;
   inset: 0;
-  filter: opacity(0.4);
+  filter: opacity(0.19);
   z-index: -1;
 }

@@ -27,7 +27,7 @@ export default function Hero() {
             href="/about-us"
             className="border border-[#07522e] font-bold px-6 py-3 rounded-md text-sm hover:border-none hover:bg-white hover:text-[#07522e] transition"
           >
-                        Learn More
+            Learn More
           </Link>
         </div>
       </div>
