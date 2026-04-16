@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-8 py-5 border-b border-gray-200">
+    <nav className="flex items-center justify-between px-8 py-5 border-b border-gray-400">
       <Image
         src="/images/logo-trans.png"
         alt="NDPC LASU"

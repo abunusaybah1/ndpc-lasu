@@ -3,3 +3,18 @@
 body {
   background-color: white;
 }
+
+.hero {
+  z-index: 1;
+  position: relative;
+}
+.hero::before {
+  background-image: url("/images/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  inset: 0;
+  filter: opacity(0.4);
+  z-index: -1;
+}
