@@ -23,6 +23,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  filter: opacity(0.19);
+  filter: opacity(1);
+  filter: brightness(0.4);
   z-index: -1;
 }

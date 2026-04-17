@@ -29,8 +29,11 @@ const Navbar = () => {
         >
           Programs
         </Link>
-        <Link href="team" className="text-[#07522e] hover:font-bold transition">
-          Team
+        <Link
+          href="services"
+          className="text-[#07522e] hover:font-bold transition"
+        >
+          Services
         </Link>
         <Link href="faqs" className="text-[#07522e] hover:font-bold transition">
           FAQs
@@ -70,10 +73,10 @@ const Navbar = () => {
             Programs
           </Link>
           <Link
-            href="team"
+            href="services"
             className="text-[#07522e] hover:font-bold transition"
           >
-            Team
+            Services
           </Link>
           <Link
             href="faqs"
