@@ -17,6 +17,10 @@ body {
   background-image: url("/images/about/lasu-front.png");
 }
 
+.program-hero::before {
+  background-image: url("/images/programs/hero-bg.png");
+}
+
 .hero::before {
   background-position: center;
   background-size: cover;
