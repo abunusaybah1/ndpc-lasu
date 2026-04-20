@@ -118,7 +118,6 @@ const Navbar = () => {
 
   return (
     <nav className="relative bg-white border-b border-gray-200 z-50">
-      {/* Accent gradient bar */}
       <div className="absolute bottom-0 left-0 w-full h-0.75 bg-linear-to-r from-[#07522e] via-[#07522e] to-[#c7252b]" />
 
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-18">
@@ -137,9 +136,7 @@ const Navbar = () => {
             <Link
               key={link.href}
               href={link.href}
-              className="text-[13.5px] font-medium text-gray-700 tracking-wide
-                pb-0.5 border-b-2 border-transparent hover:text-[#07522e]
-                hover:border-[#07522e] transition-all duration-200"
+              className="text-[13.5px] font-medium text-gray-700 tracking-wide pb-0.5 border-b-2 border-transparent hover:text-[#07522e] hover:border-[#07522e] transition-all duration-200"
             >
               {link.label}
             </Link>
@@ -148,10 +145,7 @@ const Navbar = () => {
 
         <Link
           href="/contact-us"
-          className="hidden md:inline-flex items-center bg-[#c7252b] text-white
-            text-[13px] font-bold px-5 py-2.5 rounded-md border-2 border-[#c7252b]
-            hover:bg-transparent hover:text-[#c7252b] transition-all duration-200
-            tracking-wide"
+          className="hidden md:inline-flex items-center bg-[#c7252b] text-white text-[13px] font-bold px-5 py-2.5 rounded-md border-2 border-[#c7252b] hover:bg-transparent hover:text-[#c7252b] transition-all duration-200 tracking-wide"
         >
           Get in Touch
         </Link>

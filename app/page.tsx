@@ -39,7 +39,6 @@ const programs = [
 export default function Home() {
   return (
     <main className="bg-white text-gray-800">
-      {/* Hero */}
       <section className="hero landing-hero relative w-full min-h-[90vh] flex flex-col items-start justify-center px-8 md:px-16 lg:px-24 py-24">
         <div className="max-w-2xl">
           <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#c7252b] bg-white px-3 py-1.5 rounded-full mb-6">
@@ -70,7 +69,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Highlight Cards */}
       <section className="py-16 px-6 max-w-5xl mx-auto">
         <div className="grid md:grid-cols-3 gap-6">
           {highlights.map((item, i) => (
@@ -90,7 +88,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Snippet */}
       <section className="bg-[#07522e] py-16 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <div>
@@ -161,7 +158,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="bg-[#c7252b] text-white py-16 px-6 text-center">
         <h2 className="text-3xl font-bold mb-3">Together, We Protect Data</h2>
         <p className="mb-8 opacity-90 max-w-lg mx-auto text-sm leading-relaxed">
@@ -169,9 +165,12 @@ export default function Home() {
           privacy awareness and responsible data usage.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <button className="bg-white text-[#c7252b] font-bold px-7 py-3.5 rounded-md text-sm hover:scale-105 transition-all duration-200">
+          <Link
+            href="/join-us"
+            className="bg-white text-[#c7252b] font-bold px-7 py-3.5 rounded-md text-sm hover:scale-105 transition-all duration-200"
+          >
             Join the Chapter
-          </button>
+          </Link>
           <Link
             href="/about-us"
             className="border-2 border-white text-white font-bold px-7 py-3.5 rounded-md text-sm hover:bg-white hover:text-[#c7252b] transition-all duration-200"

@@ -142,6 +142,12 @@ export default function Footer() {
             >
               FAQs
             </Link>
+            <Link
+              href="/contact-us"
+              className="opacity-80 hover:opacity-100 hover:text-[#f9c2c4] transition-colors duration-200"
+            >
+              Contact
+            </Link>
           </div>
         </div>
 
