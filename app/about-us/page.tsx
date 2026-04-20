@@ -1,11 +1,19 @@
 import Link from "next/link";
-import Hero from "./Hero";
 
 export default function AboutPage() {
   return (
     <main className="bg-white text-gray-800">
-      <Hero />
-
+      <section className="w-full flex flex-col items-center gap-12 ">
+        <div className="hero about-hero flex flex-col items-start justify-between lg:items-center lg:justify-center w-full h-full px-15 py-20 lg:p-25">
+          <h1 className="text-white text-3xl md:text-5xl lg:text-center font-bold mb-4">
+            NDPC LASU Chapter
+          </h1>
+          <p className="mt-4 text-white max-w-md text-lg lg:text-center font-bold">
+            Championing Data Privacy Awareness and Protection within Lagos State
+            University
+          </p>
+        </div>
+      </section>
       <section className="py-14 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-[#07522e] relative inline-block">
           Who We Are
@@ -25,7 +33,6 @@ export default function AboutPage() {
           respecting privacy rights in the digital age.
         </p>
       </section>
-
       <section className="bg-[#c7252b] px-6 py-15 text-[white]">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 ">Our Legal Foundation</h2>
@@ -44,7 +51,6 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-
       <section className="w-full py-14 px-6 max-w-5xl mx-auto  text-[#07522e]">
         <h2 className="text-3xl font-bold px-6">
           Our Objectives
@@ -67,7 +73,6 @@ export default function AboutPage() {
           ))}
         </ul>
       </section>
-
       <section className="bg-[#07522e] py-14 px-6 lg:py-20">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition duration-300 hover:-translate-y-1">
@@ -91,7 +96,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
       <section className="bg-[#c7252b] text-white py-14 px-6 text-center lg:py-20">
         <h2 className="text-3xl font-bold mb-4">Together, We Protect Data</h2>
 
