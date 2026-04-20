@@ -120,7 +120,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Programs Preview */}
       <section className="py-16 px-6 max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-[#07522e]">Our Programs</h2>
