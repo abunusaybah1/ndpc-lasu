@@ -17,5 +17,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// #c7252b;

@@ -1,11 +1,12 @@
+import Link from "next/link";
 import Hero from "./Hero";
 
 export default function ProgramsPage() {
   return (
-    <main className="bg-white text-gray-800">
+    <main className="bg-gray-100 text-gray-800">
       <Hero />
 
-      <section className="py-10 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
+      <section className="py-10 px-6 lg:py-20 max-w-6xl mx-auto grid md:grid-cols-2 gap-6 rounded-lg w-full">
         {[
           {
             title: "Digital Privacy Awareness Campaign (DPAC)",
@@ -34,7 +35,7 @@ export default function ProgramsPage() {
         ].map((program, i) => (
           <div
             key={i}
-            className="group bg-white border rounded-xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+            className="group bg-white border-[#07522e] rounded-xl p-6 shadow-lg hover:-translate-y-1 transition duration-300 cursor-pointer hover:shadow-[0_10px_30px_rgba(7,20,46,0.5)]"
           >
             <h3 className="text-xl font-semibold mb-2 text-[#07522e] group-hover:text-green-700 transition">
               {program.title}
@@ -47,11 +48,9 @@ export default function ProgramsPage() {
         ))}
       </section>
 
-      <section className="bg-gray-50 py-14 px-6">
+      <section className="bg-[#07522e] py-20 px-6 md:py-25 lg:py-30 text-white">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4 text-[#07522e]">
-            Why It Matters
-          </h2>
+          <h2 className="text-3xl font-bold mb-4 ">Why It Matters</h2>
 
           <p className="leading-relaxed max-w-2xl mx-auto">
             Our programs align with Nigeria’s data protection goals—ensuring
@@ -61,16 +60,19 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-green-900 to-green-700 text-white py-14 px-6 text-center">
+      <section className="bg-[#c7252b] text-white py-14 px-6 text-center">
         <h2 className="text-3xl font-bold mb-4">Get Involved</h2>
 
         <p className="mb-6 opacity-90">
           Join a program and become part of the data privacy movement in LASU.
         </p>
 
-        <button className="bg-white text-green-900 px-6 py-3 rounded-md font-medium hover:bg-gray-100 hover:scale-105 transition duration-300">
+        <Link
+          href="/programs/join"
+          className="bg-white text-[#c7252b] px-6 py-3 rounded-md font-medium hover:bg-gray-100 hover:scale-105 transition duration-300"
+        >
           Join a Program
-        </button>
+        </Link>
       </section>
     </main>
   );

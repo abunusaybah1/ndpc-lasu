@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Hero from "./Hero";
 
 export default function AboutPage() {
@@ -8,7 +9,7 @@ export default function AboutPage() {
       <section className="py-14 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-[#07522e] relative inline-block">
           Who We Are
-          <span className="block h-1 w-12 bg-green-600 mt-2 rounded"></span>
+          <span className="block h-1 w-12 bg-[#c7252b] mt-2 rounded"></span>
         </h2>
 
         <p className="mb-4 leading-relaxed hover:text-gray-900 transition duration-300">
@@ -25,11 +26,9 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="bg-linear-to-b from-gray-50 to-white py-14 px-6">
+      <section className="bg-[#c7252b] px-6 py-15 text-[white]">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-[#07522e]">
-            Our Legal Foundation
-          </h2>
+          <h2 className="text-3xl font-bold mb-6 ">Our Legal Foundation</h2>
 
           <p className="mb-4 leading-relaxed">
             The Nigeria Data Protection Act (NDP Act), signed into law on June
@@ -46,12 +45,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-14 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-[#07522e]">
+      <section className="w-full py-14 px-6 max-w-5xl mx-auto  text-[#07522e]">
+        <h2 className="text-3xl font-bold px-6">
           Our Objectives
+          <span className="block h-1 w-12 bg-[#c7252b] mt-2 rounded"></span>
         </h2>
 
-        <ul className="grid md:grid-cols-2 gap-5">
+        <ul className="py-10 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-6 rounded-lg w-full">
           {[
             "Safeguard the rights of individuals to data privacy",
             "Promote responsible data processing practices",
@@ -60,7 +60,7 @@ export default function AboutPage() {
           ].map((item, i) => (
             <li
               key={i}
-              className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 cursor-pointer"
+              className="bg-white border-[#c7252b] border rounded-xl p-5  shadow-lg hover:-translate-y-1 transition duration-300 cursor-pointer hover:shadow-[0_10px_30px_rgba(7,20,46,0.5)]"
             >
               {item}
             </li>
@@ -68,7 +68,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="bg-green-50 py-14 px-6">
+      <section className="bg-[#07522e] py-14 px-6 lg:py-20">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition duration-300 hover:-translate-y-1">
             <h3 className="text-xl font-semibold mb-2 text-[#07522e]">
@@ -92,7 +92,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-linear-to-r from-green-900 to-green-700 text-white py-14 px-6 text-center">
+      <section className="bg-[#c7252b] text-white py-14 px-6 text-center lg:py-20">
         <h2 className="text-3xl font-bold mb-4">Together, We Protect Data</h2>
 
         <p className="mb-6 opacity-90">
@@ -100,9 +100,12 @@ export default function AboutPage() {
           privacy awareness.
         </p>
 
-        <button className="bg-white text-green-900 px-6 py-3 rounded-md font-medium hover:bg-gray-100 hover:scale-105 transition duration-300">
+        <Link
+          href=""
+          className="bg-white text-[#c7252b] px-6 py-3 rounded-md font-medium hover:scale-105 transition duration-300"
+        >
           Get Involved
-        </button>
+        </Link>
       </section>
     </main>
   );

@@ -44,15 +44,15 @@ const Navbar = () => {
         className="md:hidden focus:outline-none lg:hidden"
       >
         {isOpen ? (
-          <BiX className="text-4xl text-[#07522e] hover:rotate-10 cursor-pointer" />
+          <BiX className="text-4xl text-[#c7252b] hover:rotate-10 cursor-pointer" />
         ) : (
-          <BiMenu className="text-4xl text-[#07522e] hover:rotate-10 cursor-pointer" />
+          <BiMenu className="text-4xl text-[#c7252b] hover:rotate-10 cursor-pointer" />
         )}
       </button>
       {!isOpen && (
         <Link
           href="contact-us"
-          className="hidden md:block lg:block bg-[#07522e] font-bold text-white px-4 py-2 text-sm rounded-md hover:text-[#07522e] hover:bg-white hover:border-2 hover:border-[#07522e] hover:cursor-pointer transition"
+          className="hidden md:block lg:block bg-[#c7252b] font-bold text-white px-4 py-2 text-sm rounded-md hover:text-[#c7252b] hover:bg-white hover:border-2 hover:border-[#c7252b] hover:cursor-pointer transition"
         >
           Get in touch
         </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="contact-us"
-            className="w-[80%] text-center bg-[#07522e] font-bold text-white px-4 py-2 text-sm rounded-md hover:text-[#07522e] hover:bg-white hover:border-2 hover:border-[#07522e] hover:cursor-pointer transition"
+            className="w-[80%] text-center bg-[#c7252b] font-bold text-white px-4 py-2 text-sm rounded-md hover:text-[#c7252b] hover:bg-white hover:border-2 hover:border-[#c7252b] hover:cursor-pointer transition"
           >
             Get in touch
           </Link>
